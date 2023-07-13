@@ -1,5 +1,8 @@
 /* Additions and modifications */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root {
   --fcolor: #FFFFFF;
@@ -57,198 +60,180 @@ body.works_on_smartphone {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-header .header {
-  width: 100%;
-  height: 800px;
-  background-image: url('./images/headphones_hero_1.jpg');
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
 
-header .header .headers {
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  width: 80%;
-}
-
-header .header .headers .logo {
-  height: 70px;
-  align-items: center;
-  display: flex;
-}
-
-header .header .headers .logo img.lo {
-  cursor: pointer;
-  width: 161px;
-  height: 37px;
-}
-
-header .header .headers .logo img.loo {
-  cursor: pointer;
-  width: 161px;
-  height: 37px;
-  visibility: hidden;
-  position: absolute;
-}
-
-header .header .headers .list ul {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  width: 300px;
-  align-items: center;
-  height: 70px;
-  justify-content: space-around;
-}
-
-header .header .headers .list ul a {
-  font-weight: 700;
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: 0.7s;
-}
-
-header .header .headers .list ul a:hover {
-  color: #FF6565;
-}
-
-header .header .box {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header .header .box .boxs {
-  width: 64%;
-  height: 313px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header .header .box .boxs h1 {
-  color: #FFFFFF;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-header .header .box .boxs span {
-  margin-top: 5px;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-header .header .box .boxs button {
-  margin-top: 30px;
-  height: 44px;
-  cursor: pointer;
-  border: none;
-  flex-shrink: 0;
-  width: 162px;
-  border-radius: 22px;
-  background-color: #FF6565;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #FFF;
-}
-
-header .header .box p {
-  width: 637px;
-  flex-direction: column;
-  display: flex;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  flex-shrink: 0;
-  color: #FFFFFF;
-  margin-top: 40px;
-}
-
-@media (max-width: 1000px) {
-  header .header .box .boxs {
+.header{
     width: 100%;
-  }
+    height: 800px;
+    background-image: url('./images/headphones_hero_1.jpg');
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-
-@media (max-width: 700px) {
-  header .header .box p {
-    width: 97%;
-  }
+.header .headers{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 80%;
+   
 }
-
-@media (max-width: 650px) {
-  header .header .headers .list ul {
+.header .headers .logo{
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+.header .headers .logo img{
+    cursor: pointer;
+    width: 161px;
+    height: 37px;
+}
+.header .headers .list ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
     width: 300px;
-    position: relative;
-    left: 50px;
-  }
+    align-items: center;
+    height: 70px;
+    justify-content: space-around;
 }
-
-@media (max-width: 600px) {
-  header .header .headers .list ul {
-    width: 300px;
-    left: 10px;
-  }
-
-  header .header .headers {
-    width: 95%;
-  }
+.header .headers .list ul a{
+    font-weight: 700;
+    color: var(--fcolor);
+    text-decoration: none;
+    transition: 0.7s;
 }
-
-@media (max-width: 500px) {
-  header .header .box .boxs {
-    height: auto;
-  }
+.header .headers .list ul a:hover{
+   color: var(--btn);
 }
-
-@media (max-width: 480px) {
-  body.works_on_smartphone .lo {
-    position: absolute;
-    visibility: hidden;
-  }
-
-  body.works_on_smartphone .loo {
-    position: relative;
-    visibility: visible;
-  }
-
-  header .header .headers .logo {
+.box{
+    width: 100%;
+    height: 500px;
     display: flex;
     justify-content: center;
-  }
-
-  header .header .headers .logo img {
-    cursor: pointer;
-    width: 90%;
-    height: 70px;
-  }
-
-  header .header .headers {
+    align-items: center;
+}
+.box .boxs{
+    width: 64%;
+    height: 313px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  header .header .headers .list ul {
+}
+.box .boxs h1{
+    color: var(--fcolor);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    
+}
+.box .boxs span{
+    margin-top: 5px;
+    color:var(--fcolor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+.box .boxs button{
+    margin-top: 30px;
+    height: 44px;
+    cursor: pointer;
+    border: none;
+    flex-shrink: 0;
+    width: 162px;
+    border-radius: 22px;
+    background-color: var(--btn);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+}
+.box p{
+    width: 637px;
     flex-direction: column;
-    height: 200px;
-  }
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    flex-shrink: 0;
+    color: var(--fcolor);
+    margin-top: 40px;
+}
+
+@media (max-width: 1000px){
+    .box .boxs{
+        width: 100%;
+     }
+}
+
+@media (max-width: 700px){
+    .box p{
+        width: 97%;
+    }
+   
+}
+@media (max-width: 650px){
+    .header .headers .list ul{
+        width: 300px;
+        position: relative;
+        left: 50px;
+    } 
+   
+}
+@media (max-width: 600px){
+    .header .headers .list ul{
+       width: 300px;
+       left: 10px;
+    } 
+    .header .headers{
+        width: 95%;
+   
+     }
+    }
+@media (max-width: 500px){
+    .box .boxs{
+     height: auto;
+        
+}
+   
+}
+@media (max-width: 480px){
+    .lo{
+        position: absolute;
+        visibility: hidden;
+    }
+    .loo{
+        position:relative;
+        visibility: visible;
+       
+    }
+    .header .headers .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .header .headers .logo img{
+        cursor: pointer;
+        width: 90%;
+        height: 70px;
+    }
+    
+    .header .headers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .header .headers .list ul{
+        flex-direction: column;
+        height: 200px;
+    }  
+   
+   
 }
