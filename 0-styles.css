@@ -1,3 +1,53 @@
+/* Additions and modifications */
+
+
+:root {
+  --fcolor: #FFFFFF;
+  --btn: #FF6565;
+}
+
+/* Media query for mobile version */
+@media (max-width: 480px) {
+  /* Adjustments for mobile layout */
+  body {
+    font-size: 14px; /* Example: Adjust font size for better readability on smaller screens */
+  }
+  .header .headers .list ul {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .header .headers .list ul a {
+    margin-top: 10px;
+  }
+  .box .boxs {
+    width: 90%;
+  }
+}
+
+/* Link hover/active styles */
+.header .headers .list ul a:hover,
+.header .headers .list ul a:active {
+  color: var(--btn);
+}
+
+/* Button hover/active styles */
+.box .boxs button:hover,
+.box .boxs button:active {
+  opacity: 0.9;
+}
+
+/* Max width of content centered on the page */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
 body.works_on_smartphone * {
   margin: 0;
   padding: 0;
